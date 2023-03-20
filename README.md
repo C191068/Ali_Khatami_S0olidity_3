@@ -141,8 +141,11 @@ EVM can access and store information in the following places:<br>
 6.Logs<br>
 
 From the above six we will focus on only Calldata,Memory and Storage.
-```Calldata``` and ```Memory``` means that variables will only exist temporarily.
-```Storage``` means that variables wil exits permanently
+```calldata``` and ```memory``` means that variables will only exist temporarily.<br>
+```storage``` means that variables wil exits permanently.<br>
+```calldata``` is temporary variable that can't be modified.<br>
+```memory``` is temporary variable that can be modified<br>
+```storage``` is a temporary variables that can be modified.<br>
 
 So, here in the following code:
 
@@ -195,6 +198,8 @@ contract akrkSimplestorage {
       //Here in the above inside the push function we have created a new Individual object that will take preferred number and name. 
   //push Individual in our individual array ,we can also do in this way
   }
+  //We don't need the 'name' variable after the above function runs we can keep it as memory
+  //We can also keep the name as 'calldata' in that case we can't modify it 
 
 
   
@@ -204,6 +209,8 @@ contract akrkSimplestorage {
 ```
 
 Here in ```function addCitizen(string memory _name, uint256 _preferredNumber) public{}``` function ```_name``` variable will exist temporarily during transaction.<br>
-Here in the above code ```uint256 preferredNumber;``` is automatically a storage variable even though we don't specify it because it is not explictly defined in other functions.<br>
+Here in the above code ```uint256 preferredNumber;``` is automatically a storage variable even though we don't specify it because it is not explictly defined in other functions which means that its scope is not clearly defined.<br>
+
+
 
 
