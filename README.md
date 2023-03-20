@@ -1,4 +1,4 @@
-## Ali_Khatami_Solidity_3
+## Ali_Khatami_Solidity_3(Learning from video of Patrick Collins)
 ### Basic Errors and Warnings
 
 Here is a code that contains errors.<br>
@@ -218,6 +218,8 @@ If we use ```storage```  before  ```_name``` in this function ```function addCit
 because solidity knows that since ```function addCitizen(string memory _name, uint256 _preferredNumber) public {}```  is a function<br>
 ```_name``` parameter of this function is not actually getting stored anywhere<br>
 Struct,arrays and mapping needed to be given ```memory``` or ```calldata``` keyword when adding them as parameters of diferent functions.<br>
+
+### Learning Basic Solidity Mappings
 
 
 
