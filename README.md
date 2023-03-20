@@ -210,6 +210,16 @@ contract akrkSimplestorage {
 
 Here in ```function addCitizen(string memory _name, uint256 _preferredNumber) public{}``` function ```_name``` variable will exist temporarily during transaction.<br>
 Here in the above code ```uint256 preferredNumber;``` is automatically a storage variable even though we don't specify it because it is not explictly defined in other functions which means that its scope is not clearly defined.<br>
+Here in ```function addCitizen(string memory _name, uint256 _preferredNumber) public {}``` if we use ```memory``` keyword before ```_preferredNumber``` the code will not be compiled<br>
+Because solidity automatically knows ```uint256 _preferredNumber``` will exists in memory, but does no know about ```string memory _name```<br>
+Because ```string``` are actually kind of complicated .<br>
+Since it is secretly an array of bytes we need to add this ```memory``` bit to it because we need to tell the solidity the data location of arrays,structs or mappings<br>
+If we use ```storage```  before  ```_name``` in this function ```function addCitizen(string memory _name, uint256 _preferredNumber) public {}``` it will also show errors <br>
+because solidity knows that since ```function addCitizen(string memory _name, uint256 _preferredNumber) public {}```  is a function<br>
+```_name``` parameter of this function is not actually getting stored anywhere<br>
+Struct,arrays and mapping needed to be given ```memory``` or ```calldata``` keyword when adding them as parameters of diferent functions.<br>
+
+
 
 
 
