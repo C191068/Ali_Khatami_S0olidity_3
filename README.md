@@ -204,5 +204,6 @@ contract akrkSimplestorage {
 ```
 
 Here in ```function addCitizen(string memory _name, uint256 _preferredNumber) public{}``` function ```_name``` variable will exist temporarily during transaction.<br>
-Here in the above code ```uint256 preferredNumber;``` is automatically a storage variable even though we don't specify it.
+Here in the above code ```uint256 preferredNumber;``` is automatically a storage variable even though we don't specify it because it is not explictly defined in other functions.<br>
+
 
