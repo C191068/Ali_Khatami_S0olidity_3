@@ -240,7 +240,7 @@ contract akrkSimplestorage {
    //here 'uint256 preferredNumber' will get index to 'zero'
 //below is type mapping of 'string' to 'uint256', visibility is 'public'
    mapping(string => uint256) public nameToPreferredNumber;//Here we have kind of dictionary where we gonna map a specific name to a specific number
-  
+  //When we create mapping we initiaize everything to it's null value so every possible string is initialize to having preferredNumber to zero, for that we have to manually change it.
 //Below we have created a new type in our solidity that holds both preferred number and name 
   struct Individuals{
     uint256 preferredNumber;//this get indexed to 0
@@ -267,9 +267,10 @@ contract akrkSimplestorage {
   }
 
   //now we will create a function that is going to add individuals to Individual array
-  function addCitizen(string memeory _name, uint256 _preferredNumber) public {
+  function addCitizen(string memory _name, uint256 _preferredNumber) public {
       
       individuals.push(Individuals(_preferredNumber,_name));//Here we have created a push function which is available in our Individuals object
+      nameToPreferredNumber[_name]=_preferredNumber ;//here we are going to add Individual to the individuals array where we add key name equal to preferred number
       // I have remove the semicolon from the above code 
       //Here in the above inside the push function we have created a new Individual object that will take preferred number and name. 
   //push Individual in our individual array ,we can also do in this way
