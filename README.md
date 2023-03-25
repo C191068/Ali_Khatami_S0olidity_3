@@ -1,3 +1,4 @@
+![bl1](https://user-images.githubusercontent.com/89090776/227698474-5e2efd9a-46da-40eb-aa67-0ad177985c23.jpg)
 ## Ali_Khatami_Solidity_3(Learning from video of Patrick Collins)
 ### Basic Errors and Warnings
 
@@ -284,6 +285,16 @@ contract akrkSimplestorage {
 
 //0xd9145CCE52D386f254917e481eB44e9943F39138
 ```
+ We get following output,<br>
+ 
+![bl1](https://user-images.githubusercontent.com/89090776/227698505-f7a0f968-9a04-4d3a-b8c1-bfa397a66881.jpg)
+Figure1:Here in the above figure ,I have added manually ```Khatami,68```  , ```Rokib,53```,  ```Rafi,65``` in the form of orange color ```addPerson``` button<br>
+Then when I typed one of the string suppose ```Khatami``` on the form of blue color ```nameToPrefer``` button then i will get desired prefferedNumber which is ```68``` of string ```Khatami```<br>
+
+![bl3](https://user-images.githubusercontent.com/89090776/227699802-a59ccd28-465e-4435-8d16-6150b53255a0.jpg)
+Figure2:In this Figure we can also those string assinged with eacfh preferredNumber in array when we typed each index at field of blue color ```individuals``` button<br>
+because we kept them in this  ```individuals.push(Individuals(_preferredNumber,_name));``` function
+
 
 
 
