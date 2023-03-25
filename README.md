@@ -1,4 +1,4 @@
-![bl1](https://user-images.githubusercontent.com/89090776/227698474-5e2efd9a-46da-40eb-aa67-0ad177985c23.jpg)
+
 ## Ali_Khatami_Solidity_3(Learning from video of Patrick Collins)
 ### Basic Errors and Warnings
 
