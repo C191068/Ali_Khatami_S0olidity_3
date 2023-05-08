@@ -146,7 +146,7 @@ From the above six we will focus on only Calldata,Memory and Storage.
 ```storage``` means that variables wil exits permanently.<br>
 ```calldata``` is temporary variable that can't be modified.<br>
 ```memory``` is temporary variable that can be modified<br>
-```storage``` is a temporary variables that can be modified.<br>
+
 
 So, here in the following code:
 
