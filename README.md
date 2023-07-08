@@ -70,7 +70,9 @@ Figure1:Here ```red color 1``` will show which means error occured and our code 
 
 
 Here is a code that shows warning.<br>
-```
+
+```solidity
+
 // I remove the software license
 pragma solidity ^0.8.7;
 
@@ -152,7 +154,8 @@ From the above six we will focus on only Calldata,Memory and Storage.
 
 So, here in the following code:
 
-```
+```solidity
+
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
@@ -226,7 +229,9 @@ Struct,arrays and mapping needed to be given ```memory``` or ```calldata``` keyw
 
 Mapping is just like a dictionary,it is a set of keys where each key returns values associated with that key.<br>
 Here is an example code:<br>
-```
+
+```solidity
+
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
