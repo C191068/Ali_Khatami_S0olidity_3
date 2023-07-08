@@ -3,7 +3,9 @@
 ### Basic Errors and Warnings
 
 Here is a code that contains errors.<br>
-```
+
+```solidity
+
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
